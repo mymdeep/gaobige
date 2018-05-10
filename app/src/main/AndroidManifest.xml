@@ -17,12 +17,19 @@
     </activity>
 
         <activity android:name=".callable.CallableActivity"/>
+        <activity android:name=".testactivity.TestActivity">
 
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
         <activity android:name=".generic.GenericActivity"/>
         <activity android:name=".lists.LActivity"/>
         <activity android:name=".queues.QueueActivity"/>
         <activity android:name=".timer.TimerActivity"/>
-
+        <activity android:name=".reflects.ReflectActivity"/>
+        <activity android:name=".annotation.AnnotationActivity"/>
+        <activity android:name=".passby.PassByActivity"/>
         <service android:name=".timer.DeepJobService"
                  android:permission="android.permission.BIND_JOB_SERVICE"/>
     </application>
