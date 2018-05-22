@@ -16,9 +16,6 @@ public class MyQueue {
         uiHandler.post(runnable);
     }
     public static void runInBack(Runnable runnable) {
-
             new Thread(runnable).start();
-
-
     }
 }

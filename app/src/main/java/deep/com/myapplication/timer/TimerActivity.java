@@ -21,13 +21,14 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import deep.com.myapplication.R;
 
+
 /**
  * Created by wangfei on 2018/3/31.
  */
 
 public class TimerActivity extends Activity{
     private final long delay = 1 *  1000;
-    private final long period = 1 *  1000;
+    private final long period = 10 *  1000;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

@@ -2,6 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           package="deep.com.myapplication">
 
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES"/>
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,7 +10,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".HomeActivity">
+        <activity android:name=".HomeActivity"
+                  android:launchMode="singleTask"
+                  android:theme="@style/Theme.Design.Light.NoActionBar">
         <intent-filter>
             <action android:name="android.intent.action.MAIN"/>
             <category android:name="android.intent.category.LAUNCHER"/>
@@ -30,7 +33,21 @@
         <activity android:name=".reflects.ReflectActivity"/>
         <activity android:name=".annotation.AnnotationActivity"/>
         <activity android:name=".passby.PassByActivity"/>
+        <activity android:name=".hook.HookActivity"/>
+        <activity android:name=".proxy.ProxyActivity"/>
+        <activity android:name=".databinding.DataActivity"/>
+        <activity android:name=".design.DesignActivity"/>
+        <activity android:name=".design.mvc.MVCActivity"/>
+        <activity android:name=".design.mvp.MVPActivity"/>
+        <activity android:name=".design.mvvm.MVVMActivity"/>
+        <activity android:name=".kill.KillActivity"/>
+        <activity android:name=".lifecyc.LifeCycActivity"/>
+        <activity android:name=".handler.HandlerActivity"/>
+
         <service android:name=".timer.DeepJobService"
                  android:permission="android.permission.BIND_JOB_SERVICE"/>
     </application>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET"/>
 </manifest>

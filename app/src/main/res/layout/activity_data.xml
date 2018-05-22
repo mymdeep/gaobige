@@ -1,0 +1,130 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+        <import type="android.graphics.Bitmap" />
+        <import type="java.util.ArrayList" />
+        <import type="java.util.HashMap" />
+        <import type="deep.com.myapplication.databinding.Person" />
+        <import type="deep.com.myapplication.databinding.Animal" />
+        <import type="deep.com.myapplication.databinding.detail.PersonReal" alias="realPerson" />
+        <import type="deep.com.myapplication.databinding.StringUtil" />
+        <variable
+            name="animal"
+            type="Animal" />
+        <variable
+            name="list"
+            type="ArrayList&lt;String>"/>
+        <variable
+            name="listKey"
+            type="int" />
+        <variable
+            name="click"
+            type="android.view.View.OnClickListener" />
+        <variable
+            name="change"
+            type="android.view.View.OnClickListener" />
+        <variable
+            name="person"
+            type="Person"/>
+
+        <variable
+            name="realperson"
+            type="realPerson" />
+        <!--<variable-->
+        <!--name="stringutil"-->
+        <!--type="StringUtil" />-->
+        <variable
+            name="error"
+            type="java.lang.String" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="18dp"
+            android:text="@{person.name}" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="14dp"
+            android:text="@{person.age}" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="14dp"
+            android:text="@{person.sex}" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="18dp"
+            android:text="@{animal.name}" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="14dp"
+            android:text="@{animal.age}" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="14dp"
+            android:text="@{animal.sex}" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="14dp"
+            android:onClick="@{click}"
+            android:text="@{list[listKey]}" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{StringUtil.cut(person.name)}"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="18dp"
+            android:text="@{realperson.name}" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="14dp"
+            android:text="@{realperson.age}" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="14dp"
+            android:text="@{realperson.sex}" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="14dp"
+            android:id="@+id/mutable"
+            android:text="@{realperson.sex}" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="14dp"
+            android:id="@+id/btn"
+            android:onClick="@{change}"
+            android:text="change" />
+    </LinearLayout>
+</layout>

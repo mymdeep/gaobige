@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="intros">
+        <item>Callable and Future#介绍Callable and Future</item>
+        <item>Annotation# 注解的介绍</item>
+        <item>值传递#Java 值传递</item>
+        <item>Hook# 钩子</item>
+        <item>数组介绍# 介绍SparseArray LinkedList</item>
+        <item>Queue#介绍 ArrayBlockingQueue LinkedBlockingQueue</item>
+        <item>调度#介绍了两种定时器，与JobSchedule </item>
+        <item>Activity启动模式#Activity的启动模式测试</item>
+        <item>泛型#泛型的用法</item>
+        <item>反射#反射的介绍</item>
+        <item>代理模式# 介绍InvocationHandler与代理模式</item>
+        <item>DataBinding#  DataBinding的使用</item>
+        <item>退出应用#  退出应用的集中方式</item>
+        <item>设计模式#  MVP MVC MVVM示例</item>
+        <item>ActivityLifecycleCallbacks#  ActivityLifecycleCallbacks测试</item>
+        <item>Handler and Looper#  HandlerThread Handler Looper测试</item>
+
+    </string-array>
+
+
+
+</resources>
