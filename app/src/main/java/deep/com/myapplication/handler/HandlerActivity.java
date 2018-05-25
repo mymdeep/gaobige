@@ -58,7 +58,7 @@ public class HandlerActivity extends Activity{
         findViewById(R.id.handler_btn1).setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
-              thread1.executeTask("测试，测试");
+              thread1.execute("测试，测试");
             }
         });
         findViewById(R.id.handler_btn2).setOnClickListener(new OnClickListener() {

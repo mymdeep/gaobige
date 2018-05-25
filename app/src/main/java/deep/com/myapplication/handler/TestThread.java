@@ -50,11 +50,7 @@ public class TestThread extends Thread {
             mLooper = null;
         }
     }
-
-    // This method returns immediately, it just push an Message into Thread's MessageQueue.
-    // You can also call this method continuously, the task will be executed one by one in the
-    // order of which they are pushed into MessageQueue(they are called).
-    public void executeTask(String text) {
+    public void execute(String text) {
         Log.e("handler","text="+text);
         Message msg = Message.obtain();
         msg.obj = text;
