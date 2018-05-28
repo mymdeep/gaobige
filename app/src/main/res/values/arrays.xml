@@ -17,7 +17,7 @@
         <item>设计模式#  MVP MVC MVVM示例</item>
         <item>ActivityLifecycleCallbacks#  ActivityLifecycleCallbacks测试</item>
         <item>Handler and Looper#  HandlerThread Handler Looper测试</item>
-
+        <item>自定义View#  介绍了自定义View中可能遇到的问题</item>
     </string-array>
 
 

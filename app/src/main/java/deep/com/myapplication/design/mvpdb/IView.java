@@ -1,4 +1,4 @@
-package deep.com.myapplication.design.mvp;
+package deep.com.myapplication.design.mvpdb;
 
 /**
  * Created by wangfei on 2018/5/18.
@@ -7,5 +7,4 @@ package deep.com.myapplication.design.mvp;
 public interface IView {
 
     public void update();
-
 }

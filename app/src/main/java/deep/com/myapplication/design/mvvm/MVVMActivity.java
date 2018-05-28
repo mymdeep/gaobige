@@ -1,14 +1,11 @@
 package deep.com.myapplication.design.mvvm;
 
 import android.app.Activity;
-import android.content.Context;
-import android.content.SharedPreferences;
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;
-import android.text.TextUtils;
+import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
-import android.widget.EditText;
 import android.widget.TextView;
 import deep.com.myapplication.R;
 import deep.com.myapplication.databinding.ActivityMvvmBinding;
@@ -19,7 +16,7 @@ import deep.com.myapplication.databinding.ActivityMvvmBinding;
 
 public class MVVMActivity extends Activity{
     TextView tv;
-    EditText ed;
+
     Result r;
 
     @Override
@@ -30,24 +27,28 @@ public class MVVMActivity extends Activity{
         binding.setClick(new OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (!TextUtils.isEmpty(r.getText())){
-                    r.setR("数据已保存");
-                    save(r.getText());
-                }else {
-                    r.setR("请先输入数据");
-                }
+
+               Result r=  download();
+               save(r);
             }
         });
         r = new Result();
-        r.setR("请先输入数据");
-        r.setText("请输入");
+        r.setR("");
+        r.setText("");
         binding.setResult(r);
 
 
 
     }
-    public void save(String c){
-        SharedPreferences sp = getSharedPreferences("deep", Context.MODE_PRIVATE);
-        sp.edit().putString("aa",c).apply();
+    public void save(Result r){
+        Log.e("design","save Result:"+r.getR());
+    }
+
+    public Result download(){
+        Log.e("design","download Result");
+        Result r = new Result();
+        r.setR("aaaa");
+        r.setText("数据已保存");
+        return r;
     }
 }

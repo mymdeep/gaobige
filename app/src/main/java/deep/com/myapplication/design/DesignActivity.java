@@ -8,6 +8,7 @@ import android.view.View.OnClickListener;
 import deep.com.myapplication.R;
 import deep.com.myapplication.design.mvc.MVCActivity;
 import deep.com.myapplication.design.mvp.MVPActivity;
+import deep.com.myapplication.design.mvpdb.MVPDataBindingActivity;
 import deep.com.myapplication.design.mvvm.MVVMActivity;
 
 /**
@@ -36,6 +37,12 @@ public class DesignActivity extends Activity{
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(DesignActivity.this,MVVMActivity.class));
+            }
+        });
+        findViewById(R.id.design_mvpdb).setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(DesignActivity.this,MVPDataBindingActivity.class));
             }
         });
     }

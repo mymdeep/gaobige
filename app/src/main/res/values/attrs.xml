@@ -1,0 +1,9 @@
+<resources>
+
+
+
+    <declare-styleable name="CustomView">
+        <attr name="deep_icon" format="reference|color" />
+    </declare-styleable>
+
+</resources>

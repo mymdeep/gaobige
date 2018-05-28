@@ -40,10 +40,11 @@
         <activity android:name=".design.mvc.MVCActivity"/>
         <activity android:name=".design.mvp.MVPActivity"/>
         <activity android:name=".design.mvvm.MVVMActivity"/>
+        <activity android:name=".design.mvpdb.MVPDataBindingActivity"/>
         <activity android:name=".kill.KillActivity"/>
         <activity android:name=".lifecyc.LifeCycActivity"/>
         <activity android:name=".handler.HandlerActivity"/>
-
+        <activity android:name=".customview.CustomViewActivity"/>
         <service android:name=".timer.DeepJobService"
                  android:permission="android.permission.BIND_JOB_SERVICE"/>
     </application>

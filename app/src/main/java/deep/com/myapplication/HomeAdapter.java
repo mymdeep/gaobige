@@ -12,6 +12,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 import deep.com.myapplication.annotation.AnnotationActivity;
 import deep.com.myapplication.callable.CallableActivity;
+import deep.com.myapplication.customview.CustomViewActivity;
 import deep.com.myapplication.databinding.DataActivity;
 import deep.com.myapplication.design.DesignActivity;
 import deep.com.myapplication.generic.GenericActivity;
@@ -128,6 +129,9 @@ public class HomeAdapter extends RecyclerView.Adapter<HomeAdapter.MyHolder>{
                        break;
                    case 15:
                        c = HandlerActivity.class;
+                       break;
+                   case 16:
+                       c = CustomViewActivity.class;
                        break;
                        default:
                            c = CallableActivity.class;
