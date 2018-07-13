@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="deep.com.myapplication.callable.CallableActivity">
+
+
+    <Button
+        android:id="@+id/listnode_btn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="链表的翻转"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.053"/>
+
+    <Button
+        android:id="@+id/listnode_btn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="链表的重复数据"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.192"/>
+    <Button
+        android:id="@+id/listnode_btn3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="倒数第3个值"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.192"/>
+    <Button
+        android:id="@+id/listnode_btn4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="从尾部到头输出"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.192"/>
+</android.support.constraint.ConstraintLayout>

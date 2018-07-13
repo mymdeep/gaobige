@@ -18,6 +18,13 @@
         <item>ActivityLifecycleCallbacks#  ActivityLifecycleCallbacks测试</item>
         <item>Handler and Looper#  HandlerThread Handler Looper测试</item>
         <item>自定义View#  介绍了自定义View中可能遇到的问题</item>
+        <item>排序算法#  排序聊着玩</item>
+        <item>ClassLoader#  介绍ClassLoader</item>
+        <item>touch事件分发#  介绍touch事件分发</item>
+        <item>Service#  两种Service的启动方式</item>
+        <item>Factory#  工厂模式与抽象工厂模式</item>
+        <item>命令模式#  聊聊命令模式</item>
+        <item>ListNode#  链表相关算法</item>
     </string-array>
 
 

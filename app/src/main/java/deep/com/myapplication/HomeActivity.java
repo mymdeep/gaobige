@@ -34,6 +34,17 @@ public class HomeActivity extends AppCompatActivity {
         }
 
         initViews();
+        Runtime runtime = Runtime.getRuntime();
+        Log.e("runtime","free memory"+runtime.freeMemory());
+        Log.e("runtime","max memory"+runtime.maxMemory());
+        Log.e("runtime","total memory"+runtime.totalMemory());
+        runtime.addShutdownHook(new Thread(new Runnable() {
+            @Override
+            public void run() {
+                Log.e("runtime","addShutdownHook");
+            }
+        }));
+
         //findViewById(R.id.home_btn1).setOnClickListener(new OnClickListener() {
         //    @Override
         //    public void onClick(View view) {

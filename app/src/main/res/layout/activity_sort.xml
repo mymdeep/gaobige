@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="deep.com.myapplication.callable.CallableActivity">
+
+
+
+    <Button
+        android:id="@+id/sort_btn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="插入排序"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.539"/>
+
+    <Button
+        android:id="@+id/sort_btn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="希尔排序"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.796"/>
+    <Button
+        android:id="@+id/sort_btn3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="简单排序"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.66"/>
+
+    <Button
+        android:id="@+id/sort_btn4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="堆排序"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.939"/>
+
+    <Button
+        android:id="@+id/sort_btn5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="快速排序"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.246"/>
+
+    <Button
+        android:id="@+id/sort_btn6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="冒泡排序"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.403"/>
+</android.support.constraint.ConstraintLayout>

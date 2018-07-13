@@ -76,8 +76,6 @@ public class ReflectActivity extends Activity{
                     c_p.set(  null , "c_c_c") ;
                     Log.e("reflect","设置后的静态属性值:"+DeepReflect.c);
 
-
-
                     // 通过方法设置 int是int.class 不能使用 Integer.class
                     Method setName = clz.getDeclaredMethod( "setName", String.class ) ;
                     setName.setAccessible( true );

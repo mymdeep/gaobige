@@ -45,10 +45,23 @@
         <activity android:name=".lifecyc.LifeCycActivity"/>
         <activity android:name=".handler.HandlerActivity"/>
         <activity android:name=".customview.CustomViewActivity"/>
+        <activity android:name=".sort.SortActivity"/>
+        <activity android:name=".classloader.ClassLoaderActivity"/>
+        <activity android:name=".touch.TouchActivity"/>
+        <activity android:name=".services.ServiceActivity"/>
+        <activity android:name=".rect.RectActivity"/>
+        <activity android:name=".factory.FactoryActivity"/>
+        <activity android:name=".command.CommandActivity"/>
+        <activity android:name=".listnode.ListNodeActivity"/>
+
         <service android:name=".timer.DeepJobService"
                  android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:name=".services.StartService"/>
+        <service android:name=".services.BindService"/>
     </application>
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 </manifest>

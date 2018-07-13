@@ -66,7 +66,7 @@ public class DeepView extends android.support.v7.widget.AppCompatTextView{
     protected void onLayout(boolean changed, int left, int top, int right, int bottom) {
 
         super.onLayout(true, left-1, top-1, right, bottom);
-        Log.e(Constant.TAG,"onLayout  left="+left+"top="+top+"right="+right+"bottom="+bottom+"changed="+changed);
+        Log.e(Constant.TAG,"onLayout ");
 
     }
 
@@ -112,6 +112,7 @@ public class DeepView extends android.support.v7.widget.AppCompatTextView{
 
     @Override
     protected void onDraw(Canvas canvas) {
+
         paint.setColor(Color.YELLOW);
         canvas.drawRect(0,0,getMeasuredWidth(),getMeasuredHeight(),paint);
         paint.setColor(Color.BLACK);

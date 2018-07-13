@@ -1,5 +1,6 @@
 package deep.com.myapplication.lists;
 
+import java.lang.reflect.Field;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.LinkedList;
@@ -86,6 +87,30 @@ public class LActivity extends Activity {
         findViewById(R.id.list_btn5).setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View view) {
+                HashMap<TObject,String> map = new HashMap<>(16,0.75f);
+                Log.e("times","begin");
+                for (int i = 0;i<16;i++){
+                    map.put(new TObject(i),"i="+i);
+                    try {
+                        Class<?> clz = Class.forName("java.util.HashMap");
+                        //Field[] fs = clz.getDeclaredFields();
+                        //for (Field f:fs){
+                        //    Log.e("times",f.getName());
+                        //}
+                        Field f = clz.getDeclaredField("threshold");
+                        f.setAccessible(true);
+                        Log.e("times","threshold="+f.getInt(map));
+                    } catch (ClassNotFoundException e) {
+                        Log.e("times","e1:"+e.getMessage());
+                        e.printStackTrace();
+                    } catch (NoSuchFieldException e) {
+                        Log.e("times","e2:"+e.getMessage());
+                        e.printStackTrace();
+                    } catch (IllegalAccessException e) {
+                        Log.e("times","e3:"+e.getMessage());
+                        e.printStackTrace();
+                    }
+                }
             }
         });
     }

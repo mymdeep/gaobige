@@ -14,16 +14,18 @@ import deep.com.myapplication.R;
 
 public class CustomViewActivity extends Activity {
     DeepView deepView;
+    DeepGroup deepGroup;
     @Override
     protected void onCreate( Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_customview);
         deepView = findViewById(R.id.custom1);
+        deepGroup = findViewById(R.id.custom2);
        findViewById(R.id.custom_btn1).setOnClickListener(new OnClickListener() {
            @Override
            public void onClick(View v) {
                Random r = new Random();
-               String t = "随机数："+r.nextInt();
+               String t = deepView.getText().toString()+"随机数："+r.nextInt();
                deepView.setText(t);
            }
        });
@@ -42,8 +44,11 @@ public class CustomViewActivity extends Activity {
         findViewById(R.id.custom_btn4).setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
-
-
+                if (deepGroup.getVertical()){
+                    deepGroup.setVertical(false);
+                }else {
+                    deepGroup.setVertical(true);
+                }
             }
         });
     }

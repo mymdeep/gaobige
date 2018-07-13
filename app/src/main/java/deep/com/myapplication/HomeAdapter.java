@@ -12,21 +12,28 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 import deep.com.myapplication.annotation.AnnotationActivity;
 import deep.com.myapplication.callable.CallableActivity;
+import deep.com.myapplication.classloader.ClassLoaderActivity;
+import deep.com.myapplication.command.CommandActivity;
 import deep.com.myapplication.customview.CustomViewActivity;
 import deep.com.myapplication.databinding.DataActivity;
 import deep.com.myapplication.design.DesignActivity;
+import deep.com.myapplication.factory.FactoryActivity;
 import deep.com.myapplication.generic.GenericActivity;
 import deep.com.myapplication.handler.HandlerActivity;
 import deep.com.myapplication.hook.HookActivity;
 import deep.com.myapplication.kill.KillActivity;
 import deep.com.myapplication.lifecyc.LifeCycActivity;
+import deep.com.myapplication.listnode.ListNodeActivity;
 import deep.com.myapplication.lists.LActivity;
 import deep.com.myapplication.passby.PassByActivity;
 import deep.com.myapplication.proxy.ProxyActivity;
 import deep.com.myapplication.queues.QueueActivity;
 import deep.com.myapplication.reflects.ReflectActivity;
+import deep.com.myapplication.services.ServiceActivity;
+import deep.com.myapplication.sort.SortActivity;
 import deep.com.myapplication.testactivity.TestActivity;
 import deep.com.myapplication.timer.TimerActivity;
+import deep.com.myapplication.touch.TouchActivity;
 
 /**
  * Created by wangfei on 2018/5/18.
@@ -132,6 +139,26 @@ public class HomeAdapter extends RecyclerView.Adapter<HomeAdapter.MyHolder>{
                        break;
                    case 16:
                        c = CustomViewActivity.class;
+                       break;
+                   case 17:
+                       c = SortActivity.class;
+                       break;
+                   case 18:
+                       c = ClassLoaderActivity.class;
+                       break;
+                   case 19:
+                       c = TouchActivity.class;
+                       break;
+                   case 20:
+                       c = ServiceActivity.class;
+                       break;
+                   case 21:
+                       c = FactoryActivity.class;
+                   case 22:
+                       c = CommandActivity.class;
+                       break;
+                   case 23:
+                       c = ListNodeActivity.class;
                        break;
                        default:
                            c = CallableActivity.class;

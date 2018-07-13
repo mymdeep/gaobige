@@ -1,9 +1,9 @@
 <resources>
-
-
-
     <declare-styleable name="CustomView">
         <attr name="deep_icon" format="reference|color" />
     </declare-styleable>
 
+    <declare-styleable name="CustomViewGroup">
+        <attr name="orientation" format="string" />
+    </declare-styleable>
 </resources>
