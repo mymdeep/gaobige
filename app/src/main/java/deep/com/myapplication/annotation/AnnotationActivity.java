@@ -5,12 +5,14 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
+import com.deep.processorslib.DeepAnnotation;
+import com.deep.processorslib.DeepLog;
 import deep.com.myapplication.R;
 
 /**
  * Created by wangfei on 2018/4/26.
  */
-
+@DeepAnnotation("from AnnotationActivity")
 public class AnnotationActivity extends Activity {
     @Deep(k = "this is a key")
     private String key;
@@ -18,6 +20,8 @@ public class AnnotationActivity extends Activity {
     private int a;
     @Deep(b = true)
     private boolean isB;
+    @DeepLog
+    private String aa = "ddddd";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,6 +41,14 @@ public class AnnotationActivity extends Activity {
             public void onClick(View view) {
 
         ParseAnnotation.invoke(AnnotationActivity.class,AnnotationActivity.this,"testAnnotaition");
+
+            }
+        });
+        findViewById(R.id.annotation_btn3).setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+
 
             }
         });

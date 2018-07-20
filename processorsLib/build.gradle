@@ -1,8 +1,10 @@
 apply plugin: 'java-library'
 
 dependencies {
+    sourceCompatibility = "1.7"
+    targetCompatibility = "1.7"
     implementation fileTree(include: ['*.jar'], dir: 'libs')
+//    implementation project(':annotationsLibs')
 }
 
-sourceCompatibility = "1.7"
-targetCompatibility = "1.7"
+
