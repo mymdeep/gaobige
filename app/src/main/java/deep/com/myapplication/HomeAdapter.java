@@ -30,8 +30,10 @@ import deep.com.myapplication.proxy.ProxyActivity;
 import deep.com.myapplication.queues.QueueActivity;
 import deep.com.myapplication.reflects.ReflectActivity;
 import deep.com.myapplication.services.ServiceActivity;
+import deep.com.myapplication.single.SingleActivity;
 import deep.com.myapplication.sort.SortActivity;
 import deep.com.myapplication.testactivity.TestActivity;
+import deep.com.myapplication.threadlocal.ThreadLocalActivity;
 import deep.com.myapplication.timer.TimerActivity;
 import deep.com.myapplication.touch.TouchActivity;
 
@@ -159,6 +161,12 @@ public class HomeAdapter extends RecyclerView.Adapter<HomeAdapter.MyHolder>{
                        break;
                    case 23:
                        c = ListNodeActivity.class;
+                       break;
+                   case 24:
+                       c = SingleActivity.class;
+                       break;
+                   case 25:
+                       c = ThreadLocalActivity.class;
                        break;
                        default:
                            c = CallableActivity.class;

@@ -67,7 +67,7 @@ public class DeepProcessor extends AbstractProcessor{
                 DeepLog deepLog = variableElement.getAnnotation(DeepLog.class);
                 System.out.print("----------------"+deepLog.toString()+"--------------\n");
                 System.out.print("----------------"+ processingEnv.getElementUtils().getPackageOf(typeElement).getQualifiedName().toString()+"--------------\n");
-                
+
                 // 显示转换元素类型
                 //TypeElement typeElement = (TypeElement) element;
                 //// 输出元素名称
