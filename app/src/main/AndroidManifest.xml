@@ -55,6 +55,8 @@
         <activity android:name=".listnode.ListNodeActivity"/>
         <activity android:name=".single.SingleActivity"/>
         <activity android:name=".threadlocal.ThreadLocalActivity"/>
+        <activity android:name=".deeplink.DeepLinkActivity"/>
+
         <service android:name=".timer.DeepJobService"
                  android:permission="android.permission.BIND_JOB_SERVICE"/>
         <service android:name=".services.StartService"/>

@@ -16,6 +16,7 @@ import deep.com.myapplication.classloader.ClassLoaderActivity;
 import deep.com.myapplication.command.CommandActivity;
 import deep.com.myapplication.customview.CustomViewActivity;
 import deep.com.myapplication.databinding.DataActivity;
+import deep.com.myapplication.deeplink.DeepLinkActivity;
 import deep.com.myapplication.design.DesignActivity;
 import deep.com.myapplication.factory.FactoryActivity;
 import deep.com.myapplication.generic.GenericActivity;
@@ -167,6 +168,9 @@ public class HomeAdapter extends RecyclerView.Adapter<HomeAdapter.MyHolder>{
                        break;
                    case 25:
                        c = ThreadLocalActivity.class;
+                       break;
+                   case 26:
+                       c = DeepLinkActivity.class;
                        break;
                        default:
                            c = CallableActivity.class;

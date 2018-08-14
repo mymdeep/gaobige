@@ -35,6 +35,7 @@ public class ThreadLocalActivity extends Activity {
 
             }
         });
+
         findViewById(R.id.local_btn2).setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {

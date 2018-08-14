@@ -27,6 +27,7 @@
         <item>ListNode#  链表相关算法</item>
         <item>单例模式# 单例模式分析</item>
         <item>ThreadLocal# ThreadLocal应用示例</item>
+        <item>DeepLink# deep link示例</item>
     </string-array>
 
 

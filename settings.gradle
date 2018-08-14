@@ -1,1 +1,1 @@
-include ':app', ':myapplication', ':loadertest', ':annotationsLibs', ':processorsLib'
+include ':app', ':myapplication', ':loadertest', ':annotationsLibs', ':processorsLib', ':deeplink'
